@@ -6,7 +6,7 @@ body {
     float: right;
     position: fixed;
     margin-top: 25px;
-    right: 560px;
+    right: 420px;
 
   }
 
@@ -20,7 +20,7 @@ body {
     height: -moz-fit-content;
     height: fit-content;
     display: inline-flex;
-    background-color: #e9896e;
+    background-color: #FFEFE6;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     align-items: center;
@@ -33,7 +33,7 @@ body {
   .menu-bar li {
     list-style: none;
     width: 150px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-weight: bold;
     font-family:'Koulen';
     padding: 12px 16px;
@@ -60,10 +60,59 @@ body {
     border-radius: 25px;
   }
   .menu-bar li:hover {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
   .menu-bar li:hover::before {
-    background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+    background: linear-gradient(to bottom, #e9896e, #e9896e);
     box-shadow: 0px 3px 20px 0px black;
     transform: scale(1.2);
   }
+.text1 {
+position: absolute; left:-900px; top:443px;
+width: 250px;
+height: 77px;
+color: #000;
+font-family: Koulen;
+font-size: 55px;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+}
+.text2 {
+position: absolute; left:-900px; top:447px;
+width: 450px;
+height: 199px;
+color: #E9896E;
+font-family: Koulen;
+font-size: 140px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.text3 {
+position: absolute; left:-897px; top:609px;
+font-family: Koulen;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.63) 53.65%, rgba(0, 0, 0, 0.40) 56.25%, rgba(0, 0, 0, 0.38) 59.9%, rgba(0, 0, 0, 0.62) 64.06%, #000 99.98%, rgba(0, 0, 0, 0.62) 99.99%, rgba(0, 0, 0, 0.00) 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.image1 {
+position: absolute;
+text-align: center;
+z-index: -1;
+top: 85px;
+left: -220px;
+}
+.image2 {
+position: absolute;
+text-align: center;
+width: 70px;
+height: 60px;
+top: 30px;
+left: -900px;
+}
