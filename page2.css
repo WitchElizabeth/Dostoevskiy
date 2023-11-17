@@ -18,23 +18,23 @@ main {
 
 }
 #feedback{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 110px;
-    background-color: #ffded5;
-    max-height: 400px;
-    border-radius: 110px 110px 110px 110px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  background-color: #FFE5DE;
+  max-height: 400px;
+  border-radius: 110px 110px 110px 110px;
 }
 #feedback1{
     display: flex;
     justify-content: space-between;
     margin-top: 45px;
-    background-color: #E9896E;
+    background-color: #FAE4DD;
     max-height: 95px;
     border-radius: 110px 110px 110px 110px;
 }
 #feedbackTxt3 h2 {
-    color: white;
+    color: #E9896E;
     font-family: 'DM Serif Display';
     font-size: 40px;
     font-weight: 350;
@@ -52,11 +52,62 @@ main {
     font-family: Koulen;
     margin-top: -35px;
 }
+
+#bigback {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start
+}
+
+#feedback4 {
+  margin: 45px;
+  background-color: #E9896E;
+  max-height: 95px;
+  max-width: 190px;
+  min-height: 60px;
+  min-width: 190px;
+  border-radius: 36px 36px 36px 36px;
+
+}
+
+#feedbackTxt4 p  {
+  text-align: center;
+border-radius: 36px;
+font-family: Koulen;
+color: #FFF;
+font-size: 33.5px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+#feedback5 {
+  margin: 45px;
+  background-color: #E9896E;
+  max-height: 95px;
+  max-width: 190px;
+  min-height: 60px;
+  min-width: 190px;
+  border-radius: 36px 36px 36px 36px;
+
+}
+
+#feedbackTxt5 p  {
+  text-align: center;
+border-radius: 36px;
+font-family: Koulen;
+color: #FFF;
+font-size: 33.5px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
 #feedbackTxt {
     max-width: 450px;
     margin-left: 110px;
     max-height: 400px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 #feedbackTxt h2 {
@@ -80,24 +131,103 @@ main {
     text-align: left;
 }
 
-#ImgBox {
+/*#ImgBox {
     display: flex;
     border-radius: 0 110px 0 110px;
     justify-content: right;
+}*/
+
+
+
+.carousel {
+  position: relative;
+  width: 398px;
+  padding: 10px 40px;
+  border: 1px solid #CCC;
+  border-radius: 15px;
+  background: #FAE4DD;
+  border-radius: 110px 110px 110px 110px;
 }
 
-
-#feedbackImg img{
+/*#feedbackImg img{
     border-radius: 0px 0px 0px 110px;
     max-width: 370px;
+    display: block;
+    .carousel {
+      position: relative;
+      width: 398px;
+      padding: 10px 40px;
+      border: 1px solid #CCC
+      border-radius: 15px;
+      background: #eee;
+    }*/
+    
+.carousel img {
+  /*width: 180px;
+  height: 180px;*/
+  /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
+  display: block;
+  border-radius: 0px 0px 0px 70px;
+  height: 100%;
 }
 
+.arrow {
+  position: absolute;
+  top: 145px;
+  padding: 0;
+  background: #E9896E;
+  border-radius: 20px;
+  border: 1px solid #FAE4DD;
+  font-size: 50px;
+  line-height: 48px;
+  color: #E9896E;
+  display: block;
+}
+.arrow:focus {
+  outline: none;
+}
 
-#feedbackImg2 img{
+.arrow:hover {
+  background: #ffded5;
+  color: #ffded5;
+  cursor: pointer;
+}
+
+.prev {
+  left: 7px;
+}
+
+.next {
+  right: 7px;
+}
+
+.gallery {
+  width: 390px;
+  overflow: hidden;
+}
+
+.gallery ul {
+  height: 230px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
+  /* http://davidwalsh.name/remove-whitespace-inline-block */
+  font-size: 0;
+}
+
+.gallery li {
+  display: inline-block;
+}
+
+/*#feedbackImg2 img{
     border-radius: 0px 110px 0px 0px;
     max-width: 370px;
     margin-left: 30px;
-}
+    display: block;
+}*/
 
 body2 {
     display: flex;
