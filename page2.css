@@ -58,10 +58,12 @@ main {
   flex-direction: row;
   justify-content: flex-start
 }
+
+
 #gallery ul li img {
+  object-fit: contain;
   width: 100%;
   height: 100%;
-
   object-fit: contain;
 }
 #feedback4 {
@@ -137,6 +139,23 @@ line-height: normal;
     text-align: left;
 }
 
+.arrow {
+  position: absolute;
+  z-index: 1;
+  top: 145px;
+  padding: 0;
+  background: #E9896E;
+  border-radius: 20px;
+  border: 1px solid #E9896E;
+  font-size: 50px;
+  line-height: 48px;
+  color: #E9896E;
+  display: block;
+}
+.arrow:focus {
+  outline: none;
+}
+
 /*#ImgBox {
     display: flex;
     border-radius: 0 110px 0 110px;
@@ -148,11 +167,8 @@ line-height: normal;
 .carousel {
   position: relative;
   width: 500px;
-  padding: 10px 40px;
-  border: 1px solid #CCC;
-  border-radius: 15px;
+  border-radius: 110px;
   background: #FAE4DD;
-  border-radius: 110px 110px 110px 110px;
 }
 
 /*#feedbackImg img{
@@ -173,25 +189,11 @@ line-height: normal;
   height: 180px;*/
   /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
   display: block;
-  border-radius: 0px 0px 0px 70px;
+  border-radius: 0px 110px 0px 0px;
   height: 100%;
+  width: 100%;
 }
 
-.arrow {
-  position: absolute;
-  top: 145px;
-  padding: 0;
-  background: #E9896E;
-  border-radius: 20px;
-  border: 1px solid #FAE4DD;
-  font-size: 50px;
-  line-height: 48px;
-  color: #E9896E;
-  display: block;
-}
-.arrow:focus {
-  outline: none;
-}
 
 .arrow:hover {
   background: #ffded5;
@@ -211,6 +213,7 @@ line-height: normal;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  border-radius: 0px 110px 110px 0px;
 }
 
 .gallery ul {
@@ -228,7 +231,7 @@ line-height: normal;
 .gallery ul li {
   display: inline-block;
   margin: 0 10px ;
-  width: 480px;
+  width: 500px;
   align-items: center;
 }
 
